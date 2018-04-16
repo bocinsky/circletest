@@ -2,7 +2,7 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/python:latest-node-browsers
+       - image: bocinsky/bocin_base:latest
      steps:
        - checkout
        - run: echo "hello world"
