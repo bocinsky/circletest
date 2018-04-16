@@ -5,4 +5,5 @@ jobs:
        - image: bocinsky/bocin_base:latest
      steps:
        - checkout
-       - run: r -e 'update.packages(ask=FALSE)'
+       - setup_remote_docker
+       - run: docker info
