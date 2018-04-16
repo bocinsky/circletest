@@ -5,4 +5,4 @@ jobs:
        - image: bocinsky/bocin_base:latest
      steps:
        - checkout
-       - run: echo "hello world"
+       - run: r -e 'update.packages(ask=FALSE)'
